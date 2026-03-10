@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mom!</title>
+    <style>
+        /* This section styles the page */
+        body { 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            text-align: center; 
+            background-color: #fff0f3; /* Light pink background */
+            color: #333;
+            margin: 0; 
+            padding: 0; 
+        }
+        header { 
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); 
+            color: white; 
+            padding: 60px 20px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        .card { 
+            padding: 30px 20px; 
+            max-width: 500px; 
+            margin: 30px auto; 
+            background: white; 
+            border-radius: 15px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+        }
+        img { 
+            max-width: 100%; 
+            border-radius: 10px; 
+            margin-top: 15px; 
+        }
+        /* Style for the surprise button */
+        button { 
+            background: #ff4d6d; 
+            color: white; 
+            border: none; 
+            padding: 15px 25px; 
+            font-size: 1.1em; 
+            border-radius: 25px; 
+            margin-top: 25px; 
+            width: 100%; 
+        }
+        button:active { background: #c9184a; } /* Darkens when tapped */
+        #surprise-message { 
+            display: none; /* Hidden until button is tapped */
+            margin-top: 20px; 
+            padding: 15px; 
+            background: #ffccd5; 
+            border-radius: 10px; 
+            font-size: 1.2em;
+            color: #d6336c; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Happy Birthday, Mom! 🎉</h1>
+        <p>To the best mom in the world</p>
+    </header>
+    
+    <div class="card">
+        <h2>Dear Mom,</h2>
+        <p>Thank you for everything you do. You are so loved and appreciated today and every day.</p>
+        <p>I hope this year brings you as much happiness as you bring to everyone around you!</p>
+        
+        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=500&q=80" alt="Birthday Celebration">
+        
+        <button onclick="document.getElementById('surprise-message').style.display='block'">Tap for a Surprise! 🎁</button>
+        
+        <div id="surprise-message">
+            <strong>I love you! Have the most amazing day! 💖🎂💐</strong>
+        </div>
+    </div>
+
+</body>
+</html>
